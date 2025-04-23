@@ -4,6 +4,7 @@
 void add_task(DQ_buf *pdqbuf,CD_info *ptask,File_info *pfile,int cfd)
 {
     char path[100]={0};
+    
     struct stat stat;
     strcpy(path,DOWN_PATH);
     sprintf(path,"%s%s",path,pfile->filename);
